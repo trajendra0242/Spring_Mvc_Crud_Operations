@@ -1,0 +1,5 @@
+INDEX VERSION 1.132
+D:\WEJM5\SpringMvc\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1354900507.index
+\productcrudapp\src\main\resources
+D:\WEJM5\SpringMvc\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2073181622.index
+\productapp\src\main\java

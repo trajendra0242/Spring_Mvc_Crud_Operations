@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<%@include file="./base.jsp"%>
+<style>
+    /* Apply styles to the form container */
+    .form-container {
+      background-color: #28a745; /* Green background color */
+      padding: 20px; /* Padding for space inside the form */
+      border-radius: 8px; /* Rounded corners for the form */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+      color: white; /* Set text color to white */
+    }
+    
+    /* Style form inputs and buttons */
+    .form-group label {
+      color: white; /* Change label text color to white */
+    }
+    
+    .btn-primary {
+      background-color: #007bff; /* Blue color for primary button */
+      border-color: #007bff; /* Set border color */
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+      border-color: #0056b3;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d; /* Gray color for secondary button */
+      border-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+      background-color: #5a6268; /* Darker gray on hover */
+      border-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+
+	<div class="container mt-4">
+  <div class="form-container">
+    <h2 class="mb-4">Fill The Product Details</h2>
+    <form action="handle-product" method="post">
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input type="text" class="form-control" id="productName" name="name" placeholder="Enter product name">
+      </div>
+      <div class="form-group">
+        <label for="productDescription">Product Description</label>
+        <textarea class="form-control" id="productDescription" name="description" placeholder="Enter product description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="productPrice">Product Price</label>
+        <input type="number" class="form-control" id="productPrice" name="price" placeholder="Enter product price">
+      </div>
+      <button type="submit" class="btn btn-primary mr-2">Add</button>
+      <a href="${pageContext.request.contextPath}/" class="btn btn-secondary">Back</a>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
